@@ -35,9 +35,10 @@ async function getAllQuizzesAsync() {
     const list = quizzes.map(quiz => {
         return {
             id: quiz.id,
-            name: quiz.name
+            name: quiz.name.toUpperCase()
         };
     });
+    
     return list;
 }
 
